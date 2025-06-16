@@ -2,7 +2,6 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import "./registerServiceWorker";
 
 import { CHECK_AUTH } from "./store/actions.type";
 import ApiService from "./common/api.service";
@@ -23,5 +22,5 @@ router.beforeEach((to, from, next) =>
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: (h) => h(App)
 }).$mount("#app");
